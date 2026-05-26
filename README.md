@@ -1,6 +1,6 @@
 # cmj-athlete-population-analysis
 
-Project Overview
+**Project Overview**
 
 This project analyzes two anonymized countermovement jump (CMJ) datasets to determine whether they originate from the same underlying athlete population.
 
@@ -10,11 +10,11 @@ The analysis uses:
 - multivariate linear mixed-effects modeling
 - Bayesian inference
 
-Research Question
+**Research Question**
 
 Do two anonymized CMJ datasets demonstrate statistically meaningful differences in athlete performance metrics?
 
-Methods
+**Methods**
 
 A multivariate Bayesian mixed-effects model was implemented using the `brms` package in R.
 
@@ -27,13 +27,13 @@ Outcomes included:
 
 Repeated measures within athletes were modeled as random effects.
 
-Key Findings
+**Key Findings**
 
 Across all modeled performance variables, dataset effects were small and 95% credible intervals included zero.
 
 These results suggest insufficient evidence to conclude that the datasets originated from different athlete populations.
 
-Tools Used
+**Tools Used**
 
 - R
 - tidyverse
