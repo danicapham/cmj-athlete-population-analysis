@@ -2,7 +2,7 @@
 
 **Project Overview**
 
-This project analyzes two anonymized countermovement jump (CMJ) datasets to determine whether they originate from the same underlying athlete population.
+This project analyzes two anonymized countermovement jump (CMJ) datasets to determine whether they originate from the same underlying football athlete population.
 
 The analysis uses:
 - exploratory data analysis (EDA)
