@@ -1,6 +1,6 @@
 # Countermovement Jump Population Analysis
 
-**Project Overview**
+## Project Overview
 
 This project analyzes two anonymized countermovement jump (CMJ) datasets using multivariate Bayesian mixed-effects modeling to determine whether the datasets originate from the same athlete population.
 
@@ -12,11 +12,11 @@ The analysis uses:
 - multivariate linear mixed-effects modeling
 - Bayesian inference
 
-**Research Question**
+## Research Question
 
 Do two anonymized CMJ datasets demonstrate statistically meaningful differences in jump-performance metrics, or are they consistent with the same underlying athlete population?
 
-**Data**
+## Data
 
 The datasets include repeated countermovement jump measurements from 100+ D1 football athletes.
 Both datasets show repeated measurements in multiple athletes (up to 15 repeated measurements in one dataset).
@@ -41,7 +41,7 @@ Analyses included:
 
 Repeated athlete measurements were modeled using random intercepts.
 
-**Key Findings**
+## Key Findings
 
 Across all modeled performance variables, dataset effects were small and 95% credible intervals included zero.
 
