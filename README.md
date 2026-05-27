@@ -57,3 +57,8 @@ These results suggest insufficient evidence to conclude that the datasets origin
 - brms
 - Bayesian multilevel modeling
 - PCA
+
+## AI Usage
+
+- Claude Code
+- GitHub Copilot
