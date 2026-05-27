@@ -1,5 +1,7 @@
 # Countermovement Jump Population Analysis
 
+Project Summary can be found here: outputs/project_summary.md
+
 ## Project Overview
 
 This project analyzes two anonymized countermovement jump (CMJ) datasets using multivariate Bayesian mixed-effects modeling to determine whether the datasets originate from the same athlete population. The results of this analysis were used to evaluate current performance testing accuracy and improve testing procedures by 50%.
