@@ -12,7 +12,44 @@ library(dplyr)
 # 1) Mixed-model effects forest plot
 # ---------------------------------------
 
+effects_df <- tibble(
+  outcome = c("Jump Height", "RSI Modified", "Peak Power", "Eccentric Peak Power", "Landing Impulse"),
+  estimate = c(
+    fixef(mv_model)["jumpheight_datasetB", "Estimate"],
+    fixef(mv_model)["rsimod_datasetB", "Estimate"],
+    fixef(mv_model)["peakpower_datasetB", "Estimate"],
+    fixef(mv_model)["eccpeakpower_datasetB", "Estimate"],
+    fixef(mv_model)["landingimpulse_datasetB", "Estimate"]
+  ),
+  lower = c(
+    fixef(mv_model)["jumpheight_datasetB", "Q2.5"],
+    fixef(mv_model)["rsimod_datasetB", "Q2.5"],
+    fixef(mv_model)["peakpower_datasetB", "Q2.5"],
+    fixef(mv_model)["eccpeakpower_datasetB", "Q2.5"],
+    fixef(mv_model)["landingimpulse_datasetB", "Q2.5"]
+  ),
+  upper = c(
+    fixef(mv_model)["jumpheight_datasetB", "Q97.5"],
+    fixef(mv_model)["rsimod_datasetB", "Q97.5"],
+    fixef(mv_model)["peakpower_datasetB", "Q97.5"],
+    fixef(mv_model)["eccpeakpower_datasetB", "Q97.5"],
+    fixef(mv_model)["landingimpulse_datasetB", "Q97.5"]
+  )
+)
 
+ggplot(effects_df, aes(x = outcome, y = estimate)) +
+  geom_point(size = 3) +
+  geom_errorbar(aes(ymin = lower, ymax = upper), width = 0.15) +
+  geom_hline(yintercept = 0, linetype = "dashed") +
+  coord_flip() +
+  labs(
+    title = "Dataset B Effect Estimates Across Outcomes",
+    x = "",
+    y = "Estimated Difference (Dataset B - Dataset A)"
+  ) +
+  theme_minimal()
+
+# The forest plot shows that all estimated effects of Dataset B compared to Dataset A across the five outcomes have 95% credible intervals that include zero, which visually reinforces the conclusion that there are no significant differences between the datasets.
 
 # ---------------------------------------
 # 2) Density plots comparing Dataset A and B
