@@ -11,3 +11,11 @@ Peak power over jump height by bodyweight
 
 # Dataset B
 
+Jump height over time by bodyweight
+<img width="757" height="589" alt="B_jumpheight_date_bodyweight" src="https://github.com/user-attachments/assets/cd4a75b2-5530-4d85-9652-da1c427f0397" />
+
+RSI modified over jump height by bodyweight
+<img width="764" height="590" alt="B_jumpheight_RSI_bodyweight" src="https://github.com/user-attachments/assets/764aa4e3-c079-429c-8859-b69ce68a52dd" />
+
+Peak power over jump height by bodyweight
+<img width="759" height="586" alt="B_jumpheight_peakpower_bodyweight" src="https://github.com/user-attachments/assets/2af9b947-4a4b-4fc2-9afa-460f20ffe00d" />
