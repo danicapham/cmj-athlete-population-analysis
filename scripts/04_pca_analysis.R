@@ -1,4 +1,6 @@
-# PCA plot
+# =======================================
+# PCA Analysis
+# =======================================
 
 install.packages("FactoMineR")
 install.packages("rlang")
@@ -16,6 +18,10 @@ pca_data <- combined_df %>%
   na.omit()
 
 pca <- PCA(pca_data, graph = FALSE)
+
+# ---------------------------------------
+# PCA Plot
+# ---------------------------------------
 
 fviz_pca_ind(
   pca,
