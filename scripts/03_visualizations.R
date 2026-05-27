@@ -9,7 +9,7 @@ library(ggplot2)
 library(dplyr)
 
 # ---------------------------------------
-# 1) Jump height and other variables over time by bodyweight class
+# 1) mixed-model effects forest plot
 # ---------------------------------------
 
 
