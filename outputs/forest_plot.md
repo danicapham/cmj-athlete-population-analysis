@@ -1,4 +1,4 @@
-## Forest Plot
+# Forest Plot
 
 The forest plot shows estimated differences between Dataset A and Dataset B across all 5 variables. Since all 5 intervals contain zero, we cannot confidently say that both datasets come from different populations.
 
