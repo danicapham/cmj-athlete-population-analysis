@@ -69,3 +69,18 @@ ggplot(combined_df,
 # The landing impulse distributions show substantial overlap, with similar shapes and central tendencies. There may be a slightly higher density of landing impulse values around 50-100 N s in Dataset A compared to Dataset B, but overall the distributions are quite similar, which is consistent with the model findings of no significant differences between datasets.
 
 # 5) Correlation heatmap
+
+library(corrplot)
+
+vars <- combined_df %>%
+  select(jump_height,
+         rsi_mod,
+         peak_power,
+         ecc_peak_power,
+         landing_impulse)
+
+cor_matrix <- cor(vars, use = "complete.obs")
+
+corrplot(cor_matrix, method = "color")
+
+# The heatmap shows a strong correlation between jump height, RSI modified, and peak power but a weaker correlation with landing impulse.
