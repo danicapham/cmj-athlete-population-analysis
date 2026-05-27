@@ -4,8 +4,6 @@
 
 The objective of this project was to evaluate whether two anonymized countermovement jump (CMJ) datasets originated from the same underlying collegiate football athlete population. In addition to comparing athlete-performance metrics, the project aimed to assess the reliability and consistency of current performance-testing procedures and identify opportunities to improve future athlete monitoring and data collection workflows.
 
----
-
 ## Dataset Overview
 
 The datasets contained repeated CMJ measurements collected longitudinally from collegiate football athletes. Performance variables included:
@@ -17,8 +15,6 @@ The datasets contained repeated CMJ measurements collected longitudinally from c
 - Landing Impulse
 
 Because athletes were tested multiple times over the season, repeated-measures statistical methods were required to appropriately model athlete-level variability over time.
-
----
 
 ## Exploratory Data Analysis
 
