@@ -1,4 +1,6 @@
+# ---------------------------------------
 # INTRODUCTION
+# ---------------------------------------
 
 #Task: Identify differences between Dataset A and B 
 #Report any findings concisely 
@@ -29,9 +31,9 @@
 #No tests have additional load.
 #The rep range ranges from 1-5 reps.
 
-#########################################
-
+# ---------------------------------------
 # EDA: DATASET A
+# ---------------------------------------
 
 # separate dataset into Skill, Big Skill, and Bigs by bodyweight
 
@@ -58,7 +60,9 @@ ggplot(CMJ_A, aes(x = `Jump Height (Imp-Mom) in Inches [in]`, y = `Peak Power / 
 
 # Observation: jump height seems to correlate with peak power positively
 
+# ---------------------------------------
 # EDA: DATASET B
+# ---------------------------------------
 
 # separate dataset into Skill, Big Skill, and Bigs by bodyweight
 
@@ -85,9 +89,9 @@ ggplot(CMJ_B, aes(x = `Jump Height (Imp-Mom) in Inches [in]`, y = `Peak Power / 
 
 # Observation: jump height seems to correlate with peak power positively
 
-#########################################
-
+# ---------------------------------------
 # Density plots comparing Dataset A and B
+# ---------------------------------------
 
 # jump height
 ggplot(combined_df,
