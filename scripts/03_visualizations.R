@@ -9,7 +9,7 @@ library(ggplot2)
 library(dplyr)
 
 # ---------------------------------------
-# 1) mixed-model effects forest plot
+# 1) Mixed-model effects forest plot
 # ---------------------------------------
 
 
