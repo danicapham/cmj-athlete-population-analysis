@@ -1,7 +1,8 @@
-# COMPARING DATASET A AND B
+# =======================================
+# Linear Mixed Multivariable Model comparing Datasets A and B
+# =======================================
 
-# linear mixed multivariable model
-# allows you to model several jump metrics together, account for repeated measures within athlete, and compare Dataset A vs Dataset B in one framework
+# The linear mixed multivariable model allows you to model several jump metrics together, account for repeated measures within athlete, and compare Dataset A vs Dataset B in one framework
 
 library(dplyr)
 
@@ -9,7 +10,10 @@ install.packages("brms")
 
 library(brms)
 
+# ---------------------------------------
 # 1) Combine the two datasets and label their source
+# ---------------------------------------
+
 Dataset_A_in_$dataset <- "A"
 Dataset_B_in_$dataset <- "B"
 
@@ -20,12 +24,18 @@ combined_df <- bind_rows(Dataset_A_in_, Dataset_B_in_) %>%
     AthleteUnique = factor(paste0(dataset, "_", AthDeId)),
     Date = as.Date(Date, format = "%m/%d/%Y")
   ) %>%
+
+# ---------------------------------------
   # 2) Make date numeric and centered for modeling
+# ---------------------------------------
   mutate(
     date_num = as.numeric(Date - min(Date, na.rm = TRUE)),
     date_z = as.numeric(scale(date_num))
   ) %>%
+
+# ---------------------------------------
   # 3) Rename columns so the model formula is easier to read
+# ---------------------------------------
   transmute(
     dataset,
     AthleteUnique,
@@ -38,7 +48,10 @@ combined_df <- bind_rows(Dataset_A_in_, Dataset_B_in_) %>%
   ) %>%
   tidyr::drop_na()
 
+# ---------------------------------------
 # 4) Fit the multivariate mixed model
+# ---------------------------------------
+
 mv_model <- brm(
   bf(jump_height ~ dataset + date_z + (1 | p | AthleteUnique)) +
     bf(rsi_mod ~ dataset + date_z + (1 | p | AthleteUnique)) +
@@ -58,9 +71,9 @@ mv_model <- brm(
 summary(mv_model)
 fixef(mv_model)
 
-#################################
-
+# ---------------------------------------
 # RESULTS
+# ---------------------------------------
 
 # Dataset A = reference, Dataset B = comparison
 # jumpheight_datasetB ~ how much Dataset B differs from Dataset A
