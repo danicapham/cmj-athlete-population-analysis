@@ -8,16 +8,14 @@ library(infer)
 library(ggplot2)
 library(dplyr)
 
-# 1) Load data
+# ---------------------------------------
+# 1) Jump height and other variables over time by bodyweight class
+# ---------------------------------------
 
 
-
-# 2) Clean/format variables used in plots
-
-# 3) Jump height and other variables over time by bodyweight class
 
 # ---------------------------------------
-# 4) Density plots comparing Dataset A and B
+# 2) Density plots comparing Dataset A and B
 # ---------------------------------------
 
 # jump height
@@ -68,7 +66,9 @@ ggplot(combined_df,
 
 # The landing impulse distributions show substantial overlap, with similar shapes and central tendencies. There may be a slightly higher density of landing impulse values around 50-100 N s in Dataset A compared to Dataset B, but overall the distributions are quite similar, which is consistent with the model findings of no significant differences between datasets.
 
-# 5) Correlation heatmap
+# ---------------------------------------
+# 3) Correlation heatmap
+# ---------------------------------------
 
 library(corrplot)
 
