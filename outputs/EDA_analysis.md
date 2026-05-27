@@ -1,5 +1,7 @@
 # EDA Analysis
 
+The graphs for Datasets A and B are intiial graphs to uncover trends across variables and weight groups (Skill, Big Skill, and Bigs). No official conclusion was drawn from these graphs alone.
+
 NOTE: Athlete data is largely variable due to multiple factors like injury and training season. Comparing the graphs themselves does not determine whether the datasets come from the same population or not.
 
 ## Dataset A
