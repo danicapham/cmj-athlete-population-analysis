@@ -1,6 +1,6 @@
 # Countermovement Jump Population Analysis
 
-Project Summary can be found here: [outputs/project_summary.md](https://github.com/danicapham/cmj-athlete-population analysis/blob/e4b77ed575934bfcd073c1b8c1e0e59c0571f60f/outputs/project_summary.md)
+Project Summary can be found here: https://github.com/danicapham/cmj-athlete-population-analysis/blob/e4b77ed575934bfcd073c1b8c1e0e59c0571f60f/outputs/project_summary.md
 
 ## Project Overview
 
