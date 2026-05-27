@@ -33,8 +33,6 @@ These findings provided preliminary evidence that both datasets may represent th
 <img width="760" height="591" alt="density_peakpower" src="https://github.com/user-attachments/assets/9e6d7f7c-8913-45e4-bb1a-e60f61a03621" />
 <img width="757" height="587" alt="density_landingimpulse" src="https://github.com/user-attachments/assets/78ae712d-25f4-48fe-83f8-8650d314cfb5" />
 
----
-
 ## Correlation Heatmap
 
 Correlation analysis demonstrated strong positive relationships between:
@@ -49,8 +47,6 @@ Landing impulse demonstrated weaker and partially inverse relationships with exp
 
 <img width="731" height="594" alt="correlation_heatmap" src="https://github.com/user-attachments/assets/8b53d4b4-a059-4caa-bee0-1eedfaebc605" />
 
----
-
 ## Principal Component Analysis (PCA)
 
 Principal Component Analysis (PCA) was used to evaluate whether the datasets occupied similar multivariate performance space across all CMJ variables simultaneously.
@@ -60,8 +56,6 @@ The PCA plot demonstrated substantial overlap between Dataset A and Dataset B, w
 The PCA findings visually supported the hypothesis that both datasets were statistically consistent with the same athlete population.
 
 <img width="754" height="593" alt="pca_analysis" src="https://github.com/user-attachments/assets/43c69b9a-38f4-4a84-b98f-d29bdb1dc76f" />
-
----
 
 ## Multivariate Mixed-Effects Modeling
 
@@ -87,8 +81,6 @@ Additionally, athlete-level variability was substantially larger than estimated 
 
 <img width="732" height="592" alt="forestplot" src="https://github.com/user-attachments/assets/4913e177-eb2a-4a66-bec7-7e12dad68556" />
 
----
-
 ## Key Findings
 
 - CMJ performance metrics demonstrated expected biomechanical relationships across athletes.
@@ -96,8 +88,6 @@ Additionally, athlete-level variability was substantially larger than estimated 
 - Mixed-effects modeling showed no strong evidence of systematic differences between datasets.
 - Athlete-level variability was considerably larger than dataset-level variability.
 - Observed temporal trends were minor relative to overall athlete-performance variability.
-
----
 
 ## Operational Impact
 
@@ -110,8 +100,6 @@ The analysis improved confidence in the validity of longitudinal performance tes
 - and more consistent future data-collection workflows.
 
 The project demonstrated how advanced statistical modeling and visualization techniques can support evidence-based decision-making in sports performance analytics.
-
----
 
 ## Conclusion
 
