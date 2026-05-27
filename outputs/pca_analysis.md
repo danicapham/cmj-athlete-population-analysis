@@ -1,4 +1,4 @@
-## PCA Analysis
+# PCA Analysis
 
 The PCA plot condenses both datasets onto a 2D scatter plot to allow the reader to quickly spot data clusters, trends, and outliers. This is my best visualization for determining whethr Dataset A and B come from the same population or different populations. 
 
