@@ -29,7 +29,7 @@
 #No tests have additional load.
 #The rep range ranges from 1-5 reps.
 
-------------------------------------------
+#########################################
 
 # EDA: DATASET A
 
@@ -85,7 +85,7 @@ ggplot(CMJ_B, aes(x = `Jump Height (Imp-Mom) in Inches [in]`, y = `Peak Power / 
 
 # Observation: jump height seems to correlate with peak power positively
 
-------------------------------------------
+#########################################
 
 # Density plots comparing Dataset A and B
 
